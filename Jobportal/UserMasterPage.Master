@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMasterPage.master.cs" Inherits="Jobportal.UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table width="100%" border="1">
+                <tr>
+                    <td class="auto-style1"><asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Images/1.jpg" Width="250px" /></td>
+                    <td align="center"><asp:Label ID="Label1" runat="server" Text="Job Portal" Font-Bold="True" Font-Size="Larger"></asp:Label></td>
+
+                </tr>
+
+                <tr><td class="auto-style1"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink></td><td rowspan="6">
+
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                    </asp:SiteMapPath>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td></tr>
+                <tr><td class="auto-style1"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink></td></tr>
+                <tr><td class="auto-style1"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></td></tr>
+                <tr><td class="auto-style1"><asp:LinkButton ID="LBSignupUserProfile" runat="server" OnClick="LBSignupUserProfile_Click1" ValidationGroup="Signup">Signup</asp:LinkButton></td></tr>
+                <tr><td class="auto-style1"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/jobs.aspx">Jobs</asp:HyperLink></td></tr>
+                <tr><td class="auto-style1"><asp:LinkButton ID="lbLoginLogout" runat="server" ValidationGroup="Login" OnClick="lbLoginLogout_Click1">Login</asp:LinkButton>
+                <tr><td class="auto-style1"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/adminLogin.aspx">Admin</asp:HyperLink></td></tr>
+                    </td></tr>
+
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

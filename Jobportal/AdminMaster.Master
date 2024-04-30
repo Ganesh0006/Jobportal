@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Jobportal.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 145px;
+        }
+        .auto-style2 {
+            width: 145px;
+            height: 92px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table width="100%" border="1">
+                <tr>
+                    <%--<td class="auto-style1"><asp:Image ID="Image1" runat="server" Height="198px" ImageUrl="~/Images/1.jpg" Width="152px" /></td>--%>
+                    <td ALIGN="CENTER"><asp:Label ID="Label1" runat="server" Text="ADMIN" Font-Bold="True" Font-Size="Larger" ForeColor="Red"></asp:Label></td>
+                </tr>
+
+                <tr><td class="auto-style2"><asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="#990000" StaticSubMenuIndent="10px" OnMenuItemClick="Menu1_MenuItemClick" Width="1200px">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/adminhome.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Jobs" Value="Jobs">
+                            <asp:MenuItem NavigateUrl="~/adminAddnewjobs.aspx" Text="Add New" Value="Add New">
+                                <asp:MenuItem NavigateUrl="~/adminViewjobs.aspx" Text="View/Delete" Value="View/Edit/Delete"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Resume" Value="Resume">
+                            <asp:MenuItem Text="View/Download" Value="View/Delete/Download" NavigateUrl="~/adminViewresumes.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu></td></tr>
+                </tr>
+               <%-- <tr><td><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/11.jpg" Width="1500px" /></td></tr>--%>
+
+            </table>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

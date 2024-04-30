@@ -1,0 +1,27 @@
+1.Create a  master page JPSMASTER(logo,title --- HOME/JOBSEAkER/COMPANY/ADMIN/)  ---7 Content Pages
+
+2.create contant pages for HOME/JOBSEAkER/COMPANY/ADMIN/
+
+3. Click as Jobseaker  jobeaker login page
+3. Click as company  company login page
+3. Click as Admin Admin login page
+
+4. create a content page for Jobseaker Registration
+4. create a content page for company  Registration
+4. create a content page for Admin Registration
+
+5. create table & SP  for Jobseaker 
+5. create table & SP for company  
+5. create table & SP for Admin 
+
+6.create a New Master page for  Jobseaker (logo,title ---Home/My Acc/Job Matches/Applied Job/Change pwd/Logout ) ---5+ Content Pages
+6.create a New Master page for  company  (logo,title ---Home/My Acc/Profile Matching /Applied Job/Change pwd/Logout )  ---5+ Content Pages
+6.create a New Master page for  Admin (logo,title ---Home/Jobseaker  Rpt/company  Rpt/Change pwd/Logout ) - ---4+ Content Pages
+
+7. 5+ Content Pages for  Jobseaker  Master
+7. 5+ Content Pages for  company  Master
+7. 4+ Content Pages for  Admin Master
+
+
+https://meeraacademy.com/job-portal-project-in-asp-net/
+https://youtu.be/RgQkU0M0MvM
